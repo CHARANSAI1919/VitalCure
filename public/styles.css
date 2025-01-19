@@ -1,0 +1,205 @@
+/* Add this line at the top to import the Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #002244; /* Dark blue color for the header */
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li#logo {
+    margin-right: auto; /* Move "VitalCure" to the left */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul li#logo a {
+    color: #FFD700; /* Gold color for the logo */
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-weight: bold; /* Make headings bold */
+}
+
+h1 {
+    font-size: 2.5em; /* Increase font size for main headings */
+}
+
+h2 {
+    font-size: 2em; /* Increase font size for subheadings */
+}
+
+#health-bulletin {
+    background-color: #ffffff; /* White background for sections */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.bulletin-item {
+    background-color: #ffffff; /* White background for bulletin items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.bulletin-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.5em; /* Increase font size for bulletin item headings */
+}
+
+.bulletin-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.disease-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.disease-item {
+    background-color: #ffffff; /* White background for disease items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.disease-item:hover {
+    transform: scale(1.05);
+}
+
+.disease-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.5em; /* Increase font size for disease item headings */
+}
+
+.disease-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#nearby-pharmacies {
+    text-align: left;
+}
+
+#nearby-pharmacies input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#nearby-pharmacies button {
+    padding: 10px 20px;
+    background-color: #002244; /* Dark blue background for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#nearby-pharmacies button:hover {
+    background-color: #004488; /* Lighter shade of dark blue for hover effect */
+}
+
+#map {
+    margin: 20px 0;
+}
+
+#pharmacies-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pharmacy-item {
+    background-color: #ffffff; /* White background for pharmacy items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-icon {
+    background-color: #0078D4; /* Blue color for chatbot icon */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
